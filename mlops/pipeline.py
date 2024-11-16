@@ -1,7 +1,8 @@
 import os
 import boto3
-from datetime import datetime
 
+from datetime import datetime
+from dotenv import load_dotenv
 from sagemaker import Session
 from sagemaker.workflow.pipeline import Pipeline
 from sagemaker.workflow.model_step import ModelStep
@@ -14,7 +15,6 @@ from sagemaker.estimator import Estimator
 from sagemaker.inputs import TrainingInput
 from sagemaker.serverless import ServerlessInferenceConfig
 from sagemaker.model import Model
-from dotenv import load_dotenv
 
 if __name__ == "__main__":
     load_dotenv('../.env')

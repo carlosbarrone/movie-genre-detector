@@ -3,7 +3,7 @@ env_name=$(basename "$PWD")
 algorithm_name="movie-genre-detector-$env_name"
 cd ../../
 account=$(aws sts get-caller-identity --query Account --output text)
-region=$(aws configure get region)
+region=${AWS_REGION}
 fullname="${account}.dkr.ecr.${region}.amazonaws.com/${algorithm_name}:latest"
 aws ecr describe-repositories --repository-names "${algorithm_name}" > /dev/null 2>&1
 if [ $? -ne 0 ]
