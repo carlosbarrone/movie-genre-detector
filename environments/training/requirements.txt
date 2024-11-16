@@ -1,0 +1,11 @@
+numpy
+pandas
+python-dotenv
+boto3
+sagemaker
+sagemaker-training
+scikit-learn
+sentence-transformers
+torch
+flask
+gunicorn

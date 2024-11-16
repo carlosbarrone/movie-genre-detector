@@ -1,0 +1,7 @@
+jupyter
+pandas
+sentence-transformers
+awswrangler
+sagemaker
+boto3
+python-dotenv

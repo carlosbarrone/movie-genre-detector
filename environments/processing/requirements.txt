@@ -1,0 +1,9 @@
+numpy
+pandas
+python-dotenv
+boto3
+sagemaker
+scikit-learn
+sentence-transformers
+torch
+awswrangler
