@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+    paths:
+      - 'environments/inference/**'
+      - 'environments/processing/**'
+      - 'environments/training/**'
+      - 'mlops/steps/**'
+      - 'movie_detector/**'
 
 jobs:
   build:

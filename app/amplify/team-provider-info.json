@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moviegenredetector-dev-d8a80-authRole",
+      "UnauthRoleArn": "arn:aws:iam::263963490199:role/amplify-moviegenredetector-dev-d8a80-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::263963490199:role/amplify-moviegenredetector-dev-d8a80-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-moviegenredetector-dev-d8a80-deployment",
+      "UnauthRoleName": "amplify-moviegenredetector-dev-d8a80-unauthRole",
+      "StackName": "amplify-moviegenredetector-dev-d8a80",
+      "StackId": "arn:aws:cloudformation:us-east-1:263963490199:stack/amplify-moviegenredetector-dev-d8a80/61825430-a443-11ef-9755-0ea1974251e9",
+      "AmplifyAppId": "d3joxqf3ruixei"
+    }
+  }
+}
