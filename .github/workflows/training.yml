@@ -1,4 +1,4 @@
-name: Processing Image Build
+name: Training Image Build
 
 on:
   push:
@@ -21,12 +21,11 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-1
+        aws-region: ${{ secrets.AWS_REGION }}
 
     - name: Set executable permission for the script
-      run: chmod +x ./environments/processing/build.sh
+      run: chmod +x ./environments/training/build.sh
 
     - name: Run the build script from processing folder
       run: ./build.sh
-      working-directory: ./environments/processing
-
+      working-directory: ./environments/training
