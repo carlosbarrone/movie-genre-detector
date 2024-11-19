@@ -41,7 +41,7 @@ class GenrePredictionService():
             tensors = tensor(embedded_titles, dtype=float32)
             print('Predicting...')
             predictions = model(tensors)
-            predictions = {t: p.tolist() for t, p in zip(titles, (predictions > threshold).int())}
+            predictions = {t: p.tolist() for t, p in zip(titles, predictions)}
             print('Predictions done.')
             return predictions
         except Exception as e:
